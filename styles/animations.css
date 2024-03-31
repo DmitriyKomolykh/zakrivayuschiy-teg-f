@@ -12,3 +12,39 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes move {
+	from {
+		margin-left: 0;
+	}
+	to {
+		margin-left: 4px;
+	}
+}
+
+/* core — сердцевина; */
+/* contour — контур; */
+/* main-body — основное тело сердца; */
+/* sparks — искры вокруг */
+
+@keyframes scale-heart {
+  from {
+    transform: scale(1);
+    transform-origin: center;
+  }
+
+  to {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+}
+
+@keyframes sparks-drop {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}

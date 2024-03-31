@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+/* Переменные светлой темы */
+:root {
+  --bg-color: #fff;
+	--main-color: #000;
+  --accent-color: #000;
+	--font-variable: 'Inter-Variable', sans-serif, monospace;
+	--font-main: 'PressStart2P', sans-serif, monospace;
+	--font-weight-normal: 400;
+	--font-weight-bold: 700;
+	--contour-color: #000;
+	--heart-color: #ff0000;
+	--header-bg-image: url(../images/background.png);
+	--bg-gradient: #d3d3d3;
+	--bg-gradient-start: #e7e7e7;
+	--bg-gradient-end: #1a1a1a;
+	--linear: 0.01%;
+	--width-text-375: 100%;
+}
+

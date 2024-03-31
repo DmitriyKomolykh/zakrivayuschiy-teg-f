@@ -1,0 +1,18 @@
+
+
+
+@media (width <= 375px) {
+	
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .like-icon.is-liked .sparks {
+      animation: sparks-drop 0.3s 0.3s ease-in normal;
+  }
+ 
+  .like-icon.is-liked .heart {
+    animation: scale-heart 0.3s 0.01s ease-in normal;
+  }
+
+}
