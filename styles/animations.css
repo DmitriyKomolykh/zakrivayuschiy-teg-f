@@ -13,6 +13,76 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+
+/* core — сердцевина; */
+/* contour — контур; */
+/* main-body — основное тело сердца; */
+/* sparks — искры вокруг */
+
+
+
+/*///////HEATER\\\\\\\\\ */
+
+/* .......CONTOUR........*/
+.contour {
+  fill: var(--contour-color);
+  transition: fill 0.1s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.06s;
+}
+
+/*........MAIN_BODY........*/
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-heart);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.05s;
+}
+
+/*........CORE..........*/
+.core {
+  /* fill: transparent; */
+  transition: fill 0.3s ease;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--accent-heart);
+  transition: fill 0.3s 0.03s;
+}
+
+.like-icon:active .core {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.03s;
+}
+
+/*........SPARKS........./*/
+
+.sparks {
+  opacity: 0;
+}
+
+
 @keyframes move {
 	from {
 		margin-left: 0;
@@ -22,10 +92,7 @@
 	}
 }
 
-/* core — сердцевина; */
-/* contour — контур; */
-/* main-body — основное тело сердца; */
-/* sparks — искры вокруг */
+
 
 @keyframes scale-heart {
   from {
